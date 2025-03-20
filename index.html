@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameTrends | 2025 Oyun Endüstrisi Analizi ve Trendleri</title>
+  <meta name="description"
+    content="Oyun endüstrisi trendleri, oyun geliştirmede yapay zeka, Türk oyun endüstrisi ve 2025'in en büyük oyun haberleri hakkında kapsamlı analiz.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-cube-grid">
+        <div class="preloader-cube preloader-cube1"></div>
+        <div class="preloader-cube preloader-cube2"></div>
+        <div class="preloader-cube preloader-cube3"></div>
+      </div>
+      <div class="preloader-text">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <!-- <span class="logo-icon"><i class="fas fa-gamepad"></i></span> -->
+            <span class="logo-text">Game<span>Trends</span></span>
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#hero" class="nav-link active">Ana Sayfa</a></li>
+            <li class="nav-item"><a href="#global-trends" class="nav-link">Küresel Trendler</a></li>
+            <li class="nav-item"><a href="#turkey-industry" class="nav-link">Türkiye Endüstrisi</a></li>
+            <li class="nav-item"><a href="#ai-trends" class="nav-link">Oyunlarda Yapay Zeka</a></li>
+            <li class="nav-item"><a href="#news-2025" class="nav-link">2025 Haberleri</a></li>
+            <li class="nav-item"><a href="#subscribe" class="nav-link">Abone Ol</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+
+          <div class="search-toggle">
+            <i class="fas fa-search"></i>
+          </div>
+
+          <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+      <div class="container">
+        <div class="search-overlay-inner">
+          <form class="search-form">
+            <input type="text" placeholder="Search for trends, news, analysis...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <button class="search-close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+          <span class="logo-text">Game<span>Trends</span></span>
+        </a>
+      </div>
+      <button class="mobile-menu-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="#hero" class="mobile-nav-link">Ana Sayfa</a></li>
+        <li class="mobile-nav-item"><a href="#global-trends" class="mobile-nav-link">Küresel Trendler</a></li>
+        <li class="mobile-nav-item"><a href="#turkey-industry" class="mobile-nav-link">Türkiye Endüstrisi</a></li>
+        <li class="mobile-nav-item"><a href="#ai-trends" class="mobile-nav-link">Oyunlarda Yapay Zeka</a></li>
+        <li class="mobile-nav-item"><a href="#news-2025" class="mobile-nav-link">2025 Haberleri</a></li>
+        <li class="mobile-nav-item"><a href="#subscribe" class="mobile-nav-link">Abone Ol</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <div class="mobile-social">
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles-js"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-title-line">Oyun Endüstrisi</span>
+          <span class="hero-title-line">Trend Analizi</span>
+          <span class="hero-title-year">2025</span>
+        </h1>
+        <p class="hero-subtitle">Veri odaklı içgörüler, pazar analizi ve gelişen teknoloji trendleri aracılığıyla oyunun
+          geleceğini keşfedin</p>
+        <div class="hero-buttons">
+          <a href="#global-trends" class="btn btn-primary">Trendleri Keşfet</a>
+          <a href="#subscribe" class="btn btn-outline">Güncellemelere Abone Ol</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="3.2">0</span>B</div>
+            <div class="stat-label">Küresel Oyuncu</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">$<span class="counter" data-target="365">0</span>B</div>
+            <div class="stat-label">Pazar Değeri</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="42">0</span>%</div>
+            <div class="stat-label">Mobil Pay</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="25">0</span>%</div>
+            <div class="stat-label">Yapay Zeka Entegrasyonu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <a href="#global-trends">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Global Trends Section -->
+  <section class="section global-trends" id="global-trends">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Küresel Bakış Açısı</div>
+        <h2 class="section-title">Oyun Endüstrisi <span class="highlight">Trend Analizi</span></h2>
+        <p class="section-subtitle">Gelişen küresel oyun ortamı ve pazar dinamiklerinin kapsamlı analizi</p>
+      </div>
+
+      <div class="trends-gr">
+        <h1 class="text-3xl font-bold text-center text-blue-400">Küresel Oyun Pazarının Büyümesi ve Temel Dinamikler
+        </h1>
+        <div class="container">
+
+
+          <section class="mt-8 w-1/2 m-auto" >
+            <h2 class="text-2xl font-semibold text-green-500">📈 Pazar Büyüklüğü ve Gelir Dağılımı</h2>
+            <ul class="list-disc list-inside mt-3 space-y-2">
+              <li>2024 itibarıyla küresel oyun endüstrisinin <strong>200 milyar doları</strong> aşması bekleniyor.</li>
+              <li>Mobil oyunlar, toplam pazarın yaklaşık <strong>50’sinden fazlasını</strong> oluşturuyor.</li>
+              <li>Konsol ve PC oyunları güçlü büyüme gösterirken, <strong>bulut oyun hizmetleri</strong> ve abonelik
+                modelleri popülerleşiyor. </li>
+            </ul>
+          </section>
+
+          <section class="mt-8  w-1/2 m-auto">
+            <h2 class="text-2xl font-semibold text-green-400">📊 Bölgesel Dağılım</h2>
+            <ul class="list-disc list-inside mt-3 space-y-2">
+              <li><strong>Asya-Pasifik</strong> bölgesi en büyük oyun pazarı olmaya devam ediyor. Çin, Japonya ve Güney
+                Kore lider konumda.</li>
+              <li><strong>Kuzey Amerika ve Avrupa</strong>, premium oyun ve e-spor gelirleri açısından güçlü.</li>
+              <li><strong>Latin Amerika ve Orta Doğu</strong> pazarları, yeni büyüme noktaları olarak dikkat çekiyor.
+              </li>
+            </ul>
+          </section>
+        </div>
+
+      </div>
+
+
+      <div class="trends-cta mt-10">
+        <a href="#" class="btn btn-primary">Tam Küresel Trendler Raporunu İndir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Turkey Industry Section -->
+  <section class="section turkey-industry" id="turkey-industry">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Bölgesel Odak</div>
+        <h2 class="section-title">Türkiye'de Oyun Endüstrisi <span class="highlight">Gelişimi</span></h2>
+        <p class="section-subtitle">Türkiye'nin gelişen oyun geliştirme ekosisteminin hızlı büyümesi ve benzersiz
+          özelliklerinin analizi</p>
+      </div>
+
+      <div class="turkey-overview">
+        <div class="turkey-map" data-aos="fade-right">
+          <div class="map-container">
+            <svg id="turkeyMap" viewBox="0 0 1000 500"></svg>
+            <div class="map-hotspots">
+              <div class="hotspot" style="top: 35%; left: 45%;" data-city="İstanbul">
+                <div class="hotspot-dot"></div>
+                <div class="hotspot-pulse"></div>
+                <div class="hotspot-info">
+                  <h4>İstanbul</h4>
+                  <p>215 Oyun Stüdyosu</p>
+                </div>
+              </div>
+              <div class="hotspot" style="top: 45%; left: 55%;" data-city="Ankara">
+                <div class="hotspot-dot"></div>
+                <div class="hotspot-pulse"></div>
+                <div class="hotspot-info">
+                  <h4>Ankara</h4>
+                  <p>87 Oyun Stüdyosu</p>
+                </div>
+              </div>
+              <div class="hotspot" style="top: 60%; left: 35%;" data-city="İzmir">
+                <div class="hotspot-dot"></div>
+                <div class="hotspot-pulse"></div>
+                <div class="hotspot-info">
+                  <h4>İzmir</h4>
+                  <p>42 Oyun Stüdyosu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="turkey-stats" data-aos="fade-left">
+          <div class="turkey-stat-card">
+            <div class="turkey-stat-header">
+              <div class="turkey-stat-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>Oyun Stüdyoları</h3>
+            </div>
+            <div class="turkey-stat-value"><span class="counter" data-target="450">0</span>+</div>
+            <div class="turkey-stat-growth">2020'den bu yana +125%</div>
+          </div>
+
+          <div class="turkey-stat-card">
+            <div class="turkey-stat-header">
+              <div class="turkey-stat-icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>Sektör Profesyonelleri</h3>
+            </div>
+            <div class="turkey-stat-value"><span class="counter" data-target="8500">0</span>+</div>
+            <div class="turkey-stat-growth">2020'den bu yana +210%</div>
+          </div>
+
+          <div class="turkey-stat-card">
+            <div class="turkey-stat-header">
+              <div class="turkey-stat-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Yıllık Gelir</h3>
+            </div>
+            <div class="turkey-stat-value">$<span class="counter" data-target="1.8">0</span>B</div>
+            <div class="turkey-stat-growth">2020'den bu yana +180%</div>
+          </div>
+
+          <div class="turkey-stat-card">
+            <div class="turkey-stat-header">
+              <div class="turkey-stat-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Küresel Pazar Payı</h3>
+            </div>
+            <div class="turkey-stat-value"><span class="counter" data-target="2.4">0</span>%</div>
+            <div class="turkey-stat-growth">2020'den bu yana +1.5%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="turkey-success-stories">
+        <h3 class="subsection-title">Başarı Hikayeleri</h3>
+
+        <div class="success-stories-slider">
+          <div class="success-story-track">
+            <div class="success-story">
+              <div class="success-story-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517562652858-8d863a9e0931?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fFBlYWslMjBHYW1lc3xlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Peak Games">
+              </div>
+              <div class="success-story-content">
+                <h4>Peak Games</h4>
+                <p class="success-story-highlight w-1/2" >1.8 Milyar Dolarlık Satın Alma</p>
+                <p>Peak Games, Türkiye'nin en başarılı oyun şirketlerinden biri olarak 2010 yılında kuruldu. Mobil casual oyun pazarında büyük bir etki yaratarak, Toon Blast ve Toy Blast gibi dünya çapında popüler oyunlar geliştirdi. <br> 2020 yılında, ABD merkezli oyun devi Zynga tarafından 1.8 milyar dolara satın alındı ve bu anlaşma, Türkiye'nin ilk unicorn girişimi olarak tarihe geçti. Şirketin geliştirdiği oyunlar 500 milyondan fazla indirilerek geniş bir küresel oyuncu kitlesine ulaştı. <br> Kolay oynanabilir, eğlenceli ve bağımlılık yapan mekanikleri sayesinde mobil casual oyun kategorisinde lider konumda yer almaya devam ediyor. <br>
+
+                  Peak Games’in başarısı, Türkiye oyun sektörünün uluslararası pazarda daha fazla tanınmasını sağladı ve yerli girişimler için büyük bir ilham kaynağı oldu. </p>
+                <a href="#" class="success-story-link">Tam Hikayeyi Oku</a>
+              </div>
+            </div>
+
+            <div class="success-story">
+              <div class="success-story-image">
+                <img src="images/success-story-2.jpg" alt="Dream Games">
+              </div>
+              <div class="success-story-content">
+                <h4>Dream Games</h4>
+                <p class="success-story-highlight">2.75 Milyar Dolarlık Değerleme</p>
+                <p>Eski Peak Games ekibi üyeleri tarafından kurulan Dream Games, C Serisi finansman turunda 255 milyon
+                  dolar toplayarak, hit oyunları Royal Match ile ABD'de en çok gelir getiren başlıklardan biri olarak
+                  unicorn statüsüne ulaştı.</p>
+                <a href="#" class="success-story-link">Tam Hikayeyi Oku</a>
+              </div>
+            </div>
+
+            <div class="success-story">
+              <div class="success-story-image">
+                <img src="images/success-story-3.jpg" alt="Rollic Games">
+              </div>
+              <div class="success-story-content">
+                <h4>Rollic Games</h4>
+                <p class="success-story-highlight">168 Milyon Dolarlık Satın Alma</p>
+                <p>2020'de Zynga tarafından satın alınan Rollic, portföylerinde 1 milyardan fazla indirmeye ulaşan
+                  hyper-casual oyunlarda uzmanlaşarak, Türkiye'nin hızla büyüyen hyper-casual pazarındaki gücünü
+                  gösteriyor.</p>
+                <a href="#" class="success-story-link">Tam Hikayeyi Oku</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+            <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="turkey-growth-factors">
+        <h3 class="subsection-title">Büyüme Faktörleri</h3>
+
+        <div class="growth-factors-grid">
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="100">
+            <div class="growth-factor-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>Eğitim & Yetenek</h4>
+            <p>Türkiye'nin güçlü teknik eğitim sistemi yılda 5.000'den fazla bilgisayar bilimi ve mühendislik mezunu
+              üreterek, oyun endüstrisi için sağlam bir yetenek havuzu oluşturuyor.</p>
+          </div>
+
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="200">
+            <div class="growth-factor-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h4>Devlet Desteği</h4>
+            <p>Türk hükümeti, 2024'te oyun başlangıçlarına 50 milyon dolardan fazla tahsis edilerek, oyun geliştirme
+              için özel vergi teşvikleri, hibe ve finansman programları sunuyor.</p>
+          </div>
+
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="300">
+            <div class="growth-factor-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Genç Nüfus</h4>
+            <p>32.4 yıl medyan yaşıyla, Türkiye'nin genç nüfusu hem yetenek havuzu hem de 30 milyondan fazla aktif
+              oyuncudan oluşan bir iç pazar sağlıyor.</p>
+          </div>
+
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="400">
+            <div class="growth-factor-icon">
+              <i class="fas fa-globe-europe"></i>
+            </div>
+            <h4>Stratejik Konum</h4>
+            <p>Türkiye'nin Avrupa, Asya ve Orta Doğu arasındaki konumu, oyun şirketlerinin farklı pazarları ve kültürel
+              tercihleri anlamalarına ve hedeflemelerine olanak sağlıyor.</p>
+          </div>
+
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="500">
+            <div class="growth-factor-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h4>Başlangıç Ekosistemi</h4>
+            <p>Oyun geliştirme başlangıçlarını ve erken aşama şirketleri destekleyen 15'ten fazla kuluçka merkezi ve
+              hızlandırıcı ile gelişen bir başlangıç ekosistemi.</p>
+          </div>
+
+          <div class="growth-factor" data-aos="fade-up" data-aos-delay="600">
+            <div class="growth-factor-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h4>Venture Capital</h4>
+            <p>Hem yerel hem de uluslararası yatırımcılardan artan ilgi, oyun başlangıçlarının 2024'te tek başına 500
+              milyon dolardan fazla venture capital finansmanı çekmesiyle.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="turkey-future">
+        <h3 class="subsection-title">Gelecek Görünümü</h3>
+
+        <div class="future-projection">
+          <div class="projection-chart-container" data-aos="fade-right">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1677870728119-52aef052d7ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmlkZW8lMjBnYW1lc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="">
+          </div>
+
+          <div class="projection-content" data-aos="fade-left">
+            <div class="projection-item">
+              <h4><i class="fas fa-rocket"></i> Tahmini Büyüme</h4>
+              <p>Türkiye'nin oyun endüstrisinin önümüzdeki beş yılda %24.5 CAGR ile büyümesi ve 2030'a kadar yıllık
+                gelirde 5.4 milyar dolara ulaşması bekleniyor.</p>
+            </div>
+
+            <div class="projection-item">
+              <h4><i class="fas fa-globe"></i> Küresel Genişleme</h4>
+              <p>Türk oyun şirketleri giderek uluslararası ofisler kuruyor, stüdyoların %35'i artık ABD, İngiltere veya
+                Almanya'da varlık göstererek küresel pazar erişimini kolaylaştırıyor.</p>
+            </div>
+
+            <div class="projection-item">
+              <h4><i class="fas fa-handshake"></i> Stratejik Ortaklıklar</h4>
+              <p>Türk geliştiriciler ile küresel yayıncılar arasında artan işbirliği, geçen yıl tek başına 28 büyük
+                ortaklık anlaşması duyuruldu.</p>
+            </div>
+
+            <div class="projection-item">
+              <h4><i class="fas fa-university"></i> Eğitim Yatırımı</h4>
+              <p>Türkiye genelindeki üniversiteler, endüstri ortaklıklarıyla müfredatın güncelliğini sağlayarak, son iki
+                yılda 14 yeni oyun geliştirme derece programı başlattı.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trends-cta">
+        <a href="#" class="btn btn-primary">Türkiye Endüstrisi Raporunu İndir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Trends Section -->
+  <section class="section ai-trends" id="ai-trends">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Technology Focus</div>
+        <h2 class="section-title">Game Development Trends with <span class="highlight">Artificial Intelligence</span>
+        </h2>
+        <p class="section-subtitle">Exploring how AI is revolutionizing game development, player experiences, and
+          business models</p>
+      </div>
+
+      <div class="ai-overview">
+        <div class="ai-visual" data-aos="zoom-in">
+          <div class="ai-nodes">
+            <div class="node node-center">
+              <div class="node-icon"><i class="fas fa-brain"></i></div>
+              <div class="node-label">AI in Games</div>
+            </div>
+            <div class="node node-1">
+              <div class="node-icon"><i class="fas fa-code"></i></div>
+              <div class="node-label">Development</div>
+            </div>
+            <div class="node node-2">
+              <div class="node-icon"><i class="fas fa-gamepad"></i></div>
+              <div class="node-label">Gameplay</div>
+            </div>
+            <div class="node node-3">
+              <div class="node-icon"><i class="fas fa-users"></i></div>
+              <div class="node-label">Player Experience</div>
+            </div>
+            <div class="node node-4">
+              <div class="node-icon"><i class="fas fa-chart-pie"></i></div>
+              <div class="node-label">Analytics</div>
+            </div>
+            <div class="node node-5">
+              <div class="node-icon"><i class="fas fa-paint-brush"></i></div>
+              <div class="node-label">Content Creation</div>
+            </div>
+            <div class="node node-6">
+              <div class="node-icon"><i class="fas fa-robot"></i></div>
+              <div class="node-label">NPCs</div>
+            </div>
+
+            <svg class="node-connections">
+              <line class="connection" x1="50%" y1="50%" x2="20%" y2="30%"></line>
+              <line class="connection" x1="50%" y1="50%" x2="80%" y2="30%"></line>
+              <line class="connection" x1="50%" y1="50%" x2="90%" y2="60%"></line>
+              <line class="connection" x1="50%" y1="50%" x2="70%" y2="85%"></line>
+              <line class="connection" x1="50%" y1="50%" x2="30%" y2="85%"></line>
+              <line class="connection" x1="50%" y1="50%" x2="10%" y2="60%"></line>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ai-stats">
+          <div class="ai-stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="ai-stat-value"><span class="counter" data-target="68">0</span>%</div>
+            <div class="ai-stat-label">Studios Using AI</div>
+          </div>
+
+          <div class="ai-stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="ai-stat-value"><span class="counter" data-target="42">0</span>%</div>
+            <div class="ai-stat-label">Development Time Reduction</div>
+          </div>
+
+          <div class="ai-stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="ai-stat-value"><span class="counter" data-target="35">0</span>%</div>
+            <div class="ai-stat-label">Cost Efficiency Improvement</div>
+          </div>
+
+          <div class="ai-stat-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="ai-stat-value">$<span class="counter" data-target="28">0</span>B</div>
+            <div class="ai-stat-label">AI Gaming Market Size</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-applications">
+        <h3 class="subsection-title">Key Applications</h3>
+
+        <div class="applications-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="development">Development</button>
+            <button class="tab-btn" data-tab="content">Content Creation</button>
+            <button class="tab-btn" data-tab="npc">NPC Behavior</button>
+            <button class="tab-btn" data-tab="personalization">Personalization</button>
+            <button class="tab-btn" data-tab="testing">Testing & QA</button>
+          </div>
+
+          <div class="tabs-content">
+            <div class="tab-panel active" id="development-panel">
+              <div class="tab-panel-inner">
+                <div class="tab-panel-image" data-aos="fade-right">
+                  <img
+                    src="https://media.istockphoto.com/id/1403176138/photo/teamwork-in-metaverse-with-cyber-city-skyline.webp?a=1&b=1&s=612x612&w=0&k=20&c=v3WpOW-M7GbSJFkffngn7Sp6fc7JMJmx8qLfJo5RWBQ="
+                    alt="AI in Game Development">
+                </div>
+                <div class="tab-panel-content" data-aos="fade-left">
+                  <h4>AI-Assisted Development</h4>
+                  <p>Artificial intelligence is transforming the game development process by automating repetitive
+                    tasks, generating code, and optimizing workflows.</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Procedural Generation:</strong> AI algorithms create
+                      vast, diverse game worlds and levels with minimal manual design.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Code Assistance:</strong> AI tools suggest code
+                      completions, identify bugs, and optimize performance.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Asset Management:</strong> Intelligent systems
+                      organize, tag, and retrieve game assets based on context.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Workflow Optimization:</strong> AI predicts
+                      development bottlenecks and suggests resource allocation improvements.</li>
+                  </ul>
+                  <div class="case-study">
+                    <h5>Case Study: Ubisoft's Hashcraft</h5>
+                    <p>Ubisoft's AI tool reduced level design time by 70% by automatically generating terrain, placing
+                      objects, and testing playability based on designer parameters.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="content-panel">
+              <div class="tab-panel-inner">
+                <div class="tab-panel-image" data-aos="fade-right">
+                  <img src="images/ai-content.jpg" alt="AI Content Creation">
+                </div>
+                <div class="tab-panel-content" data-aos="fade-left">
+                  <h4>AI Content Creation</h4>
+                  <p>AI tools are revolutionizing content creation by generating high-quality assets, narratives, and
+                    dialogue at scale.</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Visual Asset Generation:</strong> AI creates
+                      textures, models, and environments based on style parameters.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Dynamic Narratives:</strong> AI systems craft
+                      branching storylines that adapt to player choices.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Dialogue Systems:</strong> Natural language
+                      processing enables realistic, contextual NPC conversations.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Music & Sound:</strong> AI composes adaptive music
+                      and generates sound effects that respond to gameplay.</li>
+                  </ul>
+                  <div class="case-study">
+                    <h5>Case Study: Midjourney Integration</h5>
+                    <p>Indie studio Emberstorm reduced concept art production time by 85% using AI image generation,
+                      allowing their small team to create AAA-quality visual assets.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="npc-panel">
+              <div class="tab-panel-inner">
+                <div class="tab-panel-image" data-aos="fade-right">
+                  <img src="images/ai-npc.jpg" alt="AI NPC Behavior">
+                </div>
+                <div class="tab-panel-content" data-aos="fade-left">
+                  <h4>Advanced NPC Behavior</h4>
+                  <p>AI is creating more realistic, adaptive, and challenging non-player characters that learn and
+                    evolve based on player interactions.</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Behavioral Learning:</strong> NPCs adapt strategies
+                      based on player patterns and preferences.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Emotional Intelligence:</strong> Characters display
+                      contextual emotional responses to player actions.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Dynamic Difficulty:</strong> AI adjusts challenge
+                      levels in real-time based on player skill.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Memory Systems:</strong> NPCs remember past
+                      interactions and modify behavior accordingly.</li>
+                  </ul>
+                  <div class="case-study">
+                    <h5>Case Study: Shadow of Mordor's Nemesis System</h5>
+                    <p>The Nemesis System created unique enemies that remembered encounters with players, adapted to
+                      defeats, and developed personalized rivalries, creating emergent storytelling.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="personalization-panel">
+              <div class="tab-panel-inner">
+                <div class="tab-panel-image" data-aos="fade-right">
+                  <img
+                    src="https://media.istockphoto.com/id/1516277094/photo/young-female-teacher-giving-a-data-science-presentation-in-a-dark-auditorium-with-projecting.webp?a=1&b=1&s=612x612&w=0&k=20&c=HrAD9HLIsGfFopR6w90FwTPyseMWkeWjtHeXy2D9nBg="
+                    alt="AI Personalization">
+                </div>
+                <div class="tab-panel-content" data-aos="fade-left">
+                  <h4>Player Experience Personalization</h4>
+                  <p>AI analyzes player behavior to deliver customized experiences that adapt to individual preferences
+                    and play styles.</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Adaptive Difficulty:</strong> Games automatically
+                      adjust challenge based on player skill level.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Content Recommendations:</strong> AI suggests
+                      quests, items, or activities based on player preferences.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Dynamic Storytelling:</strong> Narrative elements
+                      adapt to player choices and emotional responses.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Customized Tutorials:</strong> Learning experiences
+                      adjust to player learning styles and prior knowledge.</li>
+                  </ul>
+                  <div class="case-study">
+                    <h5>Case Study: EA's Dynamic Difficulty Adjustment</h5>
+                    <p>EA's patented system analyzes player performance to subtly adjust game parameters, keeping
+                      players in the "flow zone" between boredom and frustration.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="testing-panel">
+              <div class="tab-panel-inner">
+                <div class="tab-panel-image" data-aos="fade-right">
+                  <img
+                    src="https://media.istockphoto.com/id/1403176138/photo/teamwork-in-metaverse-with-cyber-city-skyline.webp?a=1&b=1&s=612x612&w=0&k=20&c=v3WpOW-M7GbSJFkffngn7Sp6fc7JMJmx8qLfJo5RWBQ="
+                    alt="AI Testing & QA">
+                </div>
+                <div class="tab-panel-content" data-aos="fade-left">
+                  <h4>AI-Powered Testing & QA</h4>
+                  <p>Artificial intelligence is revolutionizing game testing by automating bug detection, performance
+                    optimization, and player experience evaluation.</p>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Automated Playtesting:</strong> AI agents play
+                      through games to identify bugs and balance issues.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Performance Optimization:</strong> Machine learning
+                      identifies and resolves performance bottlenecks.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Predictive Analytics:</strong> AI forecasts
+                      potential issues before they impact players.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>User Experience Testing:</strong> Simulated player
+                      behaviors test game mechanics at scale.</li>
+                  </ul>
+                  <div class="case-study">
+                    <h5>Case Study: Microsoft's AirSim</h5>
+                    <p>Microsoft's AirSim platform uses AI to test game physics, rendering, and performance across
+                      thousands of simulated scenarios, reducing QA time by 60%.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-challenges">
+        <h3 class="subsection-title">Challenges & Ethical Considerations</h3>
+
+        <div class="challenges-grid">
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="challenge-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h4>Ethical AI Implementation</h4>
+            <p>Ensuring AI systems in games avoid bias, respect player privacy, and maintain transparency in how they
+              operate and make decisions.</p>
+          </div>
+
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="challenge-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h4>Data Privacy Concerns</h4>
+            <p>Balancing the collection of player data for AI training with robust privacy protections and transparent
+              data usage policies.</p>
+          </div>
+
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="challenge-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h4>Creative Ownership</h4>
+            <p>Addressing questions of intellectual property and creative attribution when AI generates game content
+              based on existing works.</p>
+          </div>
+
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="challenge-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h4>Technical Integration</h4>
+            <p>Overcoming challenges in integrating AI systems with existing game engines and development workflows.</p>
+          </div>
+
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="challenge-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>Skill Development</h4>
+            <p>Training developers to effectively work with AI tools and understand their capabilities and limitations.
+            </p>
+          </div>
+
+          <div class="challenge-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="challenge-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h4>Human-AI Collaboration</h4>
+            <p>Finding the optimal balance between AI automation and human creativity in the game development process.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="ai-future">
+        <h3 class="subsection-title">Future Outlook</h3>
+
+        <div class="future-timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-year">2025-2026</div>
+            <div class="timeline-content">
+              <h4>Mainstream AI Integration</h4>
+              <p>AI tools become standard in game development pipelines, with 85% of major studios implementing
+                AI-assisted content creation and testing.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-year">2027-2028</div>
+            <div class="timeline-content">
+              <h4>Truly Adaptive Games</h4>
+              <p>Games that completely reshape their content, difficulty, and narrative based on individual player
+                behavior become commercially viable.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-year">2029-2030</div>
+            <div class="timeline-content">
+              <h4>AI Game Directors</h4>
+              <p>AI systems that can oversee entire game experiences, dynamically creating content and adjusting all
+                aspects of gameplay in real-time.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-year">2030+</div>
+            <div class="timeline-content">
+              <h4>Emergent Game Worlds</h4>
+              <p>Self-evolving game worlds with AI-driven ecosystems, economies, and societies that develop
+                independently of direct player interaction.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="trends-cta">
+        <a href="#" class="btn btn-primary">Download AI in Gaming Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2025 News Section -->
+  <section class="section news-2025" id="news-2025">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Sektör Güncellemeleri</div>
+        <h2 class="section-title">2025'te Oyun Dünyasının <span class="highlight">En Büyük Haberleri</span></h2>
+        <p class="section-subtitle">En önemli gelişmeleri, satın almaları ve teknolojik atılımları analiz ediyoruz <br>
+        </p>
+      </div>
+
+      <div class="news-filter">
+        <button class="filter-btn active" data-filter="all">Tüm Haberler</button>
+        <button class="filter-btn" data-filter="acquisitions">Satın Almalar</button>
+        <button class="filter-btn" data-filter="technology">Teknoloji</button>
+        <button class="filter-btn" data-filter="releases">Önemli Çıkışlar</button>
+        <button class="filter-btn" data-filter="industry">Sektör Değişimleri</button>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card" data-category="acquisitions" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/1491045957/photo/technology-particles-and-luminescent-glasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=zDPfKbhn1Ntryw1LeWahMY1pVBYtm4HoHBKaKKwrXkc="
+              alt="Sony Remedy Entertainment'ı Satın Aldı">
+            <div class="news-category">Satın Alma</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">15 Mart 2025</div>
+            <h3 class="news-title">Sony, Remedy Entertainment'ı 1.2 Milyar Dolara Satın Aldı</h3>
+            <p class="news-excerpt">Satın alma, Remedy'nin hikaye odaklı aksiyon oyunları ve özel Northlight motor
+              teknolojisiyle Sony'nin birinci parti portföyünü güçlendiriyor.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="technology" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/1492439505/photo/biotechnology-human-eye.webp?a=1&b=1&s=612x612&w=0&k=20&c=1STvk2MkWIH4vn-GwStP_eWjSvbGZZ-4UDIQKwmuqf8="
+              alt="Unreal Engine 6">
+            <div class="news-category">Teknoloji</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">22 Ocak 2025</div>
+            <h3 class="news-title">Epic Games, Devrim Niteliğinde Yapay Zeka Entegrasyonuyla Unreal Engine 6'yı Duyurdu
+            </h3>
+            <p class="news-excerpt">Yeni nesil motor, yapay zeka destekli içerik oluşturma araçları, fotogerçekçi render
+              ve gelişmiş fizik simülasyon yetenekleri sunuyor.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="releases" data-aos="fade-up" data-aos-delay="300">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/1465163462/photo/digital-contents-concept-social-networking-service-streaming-video-nft-non-fungible-token.jpg?s=612x612&w=0&k=20&c=UkC9UfCrtsc0Jvv2X3o5g7m75xsFLxlq5RR10b9Dbkk="
+              alt="GTA 6 Lansmanı">
+            <div class="news-category">Çıkış</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">5 Ekim 2025</div>
+            <h3 class="news-title">GTA 6, 1.5 Milyar Dolarlık Açılış Haftasıyla Rekor Kırdı</h3>
+            <p class="news-excerpt">Rockstar'ın uzun zamandır beklenen başlığı, tüm önceki video oyunu, film ve müzik
+              çıkışlarını geride bırakarak tarihin en büyük eğlence lansmanı oldu.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="industry" data-aos="fade-up" data-aos-delay="400">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/2196514369/photo/top-view-of-smart-teacher-coding-prompt-while-children-learning-board-pedagogy.jpg?s=612x612&w=0&k=20&c=nm5S8lXcJ6mAVBwBJns_9C96o3LWqIndxHTQffzcVrA="
+              alt="Game Workers United">
+            <div class="news-category">Sektör</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">8 Nisan 2025</div>
+            <h3 class="news-title">Game Workers United, Sektörün İlk Küresel Sendikası Oldu</h3>
+            <p class="news-excerpt">Organizasyon, büyük yayıncılar ve stüdyolar arasında tanınma kazanarak, çalışma
+              koşulları ve tazminat için yeni standartlar belirledi.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="technology" data-aos="fade-up" data-aos-delay="500">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/2172100981/photo/close-up-shot-of-engineer-hands-using-simulation-handset-remote-conrol-the-simulated-robotics.jpg?s=612x612&w=0&k=20&c=fOwWej-yv978CdpB_GKJiZbT-2u6SrnP3TSxCidx1FU="
+              alt="Neural Interface Gaming">
+            <div class="news-category">Teknoloji</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">17 Temmuz 2025</div>
+            <h3 class="news-title">Valve, Yeni Nesil Oyun Deneyimleri için Neural Interface Duyurdu</h3>
+            <p class="news-excerpt">İnvaziv olmayan neural interface teknolojisi, oyuncu niyetini ve duygusal
+              yanıtlarını doğrudan yorumlayarak sürükleyiciliği devrimleştirmeyi vaat ediyor.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="acquisitions" data-aos="fade-up" data-aos-delay="600">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/2163504263/photo/boy-wearing-vr-headset-to-enter-metaworld-while-girl-coding-system-pedagogy.jpg?s=612x612&w=0&k=20&c=fHbHjWAueqzu4eQtiVm7v0C9gHcMuHNiv9QJ8s468gM="
+              alt="Amazon Game Studios Genişlemesi">
+            <div class="news-category">Satın Alma</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">30 Mayıs 2025</div>
+            <h3 class="news-title">Amazon, CD Projekt Red'i 4.8 Milyar Dolarlık Anlaşmayla Satın Aldı</h3>
+            <p class="news-excerpt">Satın alma, The Witcher ve Cyberpunk serilerinin yaratıcılarını güvence altına
+              alarak Amazon'un oyun sektörüne en büyük adımını işaret ediyor.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="releases" data-aos="fade-up" data-aos-delay="700">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/1490944850/photo/happy-diverse-young-people-in-white-clothes-and-vr-helmet-isolated-over-neon-background.jpg?s=612x612&w=0&k=20&c=1QKVUTVgjXHBjObRe0Y9unhBt8zajQbKOANQ3sAslb0="
+              alt="Elder Scrolls 6">
+            <div class="news-category">Çıkış</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">11 Kasım 2025</div>
+            <h3 class="news-title">Elder Scrolls VI Xbox/PC Özel Olarak Çıktı, Ön Sipariş Rekorları Kırdı</h3>
+            <p class="news-excerpt">Bethesda'nın uzun zamandır beklenen RPG destanı nihayet Microsoft özel olarak geldi,
+              rekor Xbox konsol satışları ve Game Pass aboneliklerini tetikledi.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card" data-category="industry" data-aos="fade-up" data-aos-delay="800">
+          <div class="news-image">
+            <img
+              src="https://media.istockphoto.com/id/1736429276/photo/creating-a-data-set-for-ai-generated-to-follow-human-input-instructions-using-artificial.jpg?s=612x612&w=0&k=20&c=nS7rUzAloPrgGw3IwampKK8InYbUXrwarihwaP9JMvE="
+              alt="Bulut Oyun Dominasyonu">
+            <div class="news-category">Sektör</div>
+          </div>
+          <div class="news-content">
+            <div class="news-date">3 Şubat 2025</div>
+            <h3 class="news-title">Bulut Oyun, Sektör Tarihinde İlk Kez Konsol Satışlarını Geride Bıraktı</h3>
+            <p class="news-excerpt">Pazar araştırması, bulut oyun hizmetlerinin artık geleneksel konsol donanım
+              satışlarından daha fazla gelir ürettiğini ve büyük bir sektör değişimine işaret ettiğini doğruladı.</p>
+            <a href="#" class="news-link">Tam Haberi Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-load-more">
+        <button class="btn btn-outline">Daha Fazla Haber Yükle</button>
+      </div>
+
+      <div class="news-subscribe">
+        <div class="news-subscribe-content">
+          <h3>Oyun Sektörü Haberlerinden Haberdar Olun</h3>
+          <p>Önemli haberler, analizler ve özel içgörüler için haftalık bültenimize abone olun.</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="E-posta adresiniz" required>
+            <button type="submit" class="btn btn-primary">Abone Ol</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="section subscribe-section" id="subscribe">
+    <div class="container">
+      <div class="subscribe-container">
+        <div class="subscribe-content" data-aos="fade-right">
+          <h2>Get Our <span class="highlight">Comprehensive Reports</span></h2>
+          <p>Subscribe to receive our in-depth analysis reports, trend forecasts, and exclusive industry insights
+            directly to your inbox.</p>
+          <ul class="subscribe-benefits">
+            <li><i class="fas fa-check-circle"></i> Quarterly Game Industry Trend Reports</li>
+            <li><i class="fas fa-check-circle"></i> Monthly Market Analysis Updates</li>
+            <li><i class="fas fa-check-circle"></i> Exclusive Interviews with Industry Leaders</li>
+            <li><i class="fas fa-check-circle"></i> Early Access to Webinars and Events</li>
+            <li><i class="fas fa-check-circle"></i> Customized Regional Market Insights</li>
+          </ul>
+        </div>
+
+        <div class="subscribe-form-container" data-aos="fade-left">
+          <form class="subscribe-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company (Optional)</label>
+              <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+              <label for="interest">Primary Interest</label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select your primary interest</option>
+                <option value="global">Global Market Trends</option>
+                <option value="turkey">Turkish Game Industry</option>
+                <option value="ai">AI in Game Development</option>
+                <option value="news">Industry News & Updates</option>
+                <option value="all">All Topics</option>
+              </select>
+            </div>
+
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a
+                  href="cookie-policy.html">Cookie Policy</a></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-widgets">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="index.html">
+                <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                <span class="logo-text">Game<span>Trends</span></span>
+              </a>
+            </div>
+            <p class="footer-description">GameTrends provides comprehensive analysis of the global and Turkish game
+              industry, emerging technologies, and market trends through data-driven insights and expert perspectives.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#global-trends">Global Trends</a></li>
+              <li><a href="#turkey-industry">Turkey Industry</a></li>
+              <li><a href="#ai-trends">AI in Games</a></li>
+              <li><a href="#news-2025">2025 News</a></li>
+              <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Resources</h3>
+            <ul class="footer-links">
+              <li><a href="#">Reports & White Papers</a></li>
+              <li><a href="#">Webinars & Events</a></li>
+              <li><a href="#">Industry Interviews</a></li>
+              <li><a href="#">Market Data</a></li>
+              <li><a href="#">Research Methodology</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Contact Us</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-map-marker-alt"></i> Levent, Istanbul, Turkey</li>
+              <li><i class="fas fa-phone"></i> +90 212 555 1234</li>
+              <li><i class="fas fa-envelope"></i> info@gametrends.com</li>
+            </ul>
+            <div class="footer-newsletter">
+              <h4>Newsletter</h4>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p class="copyright">&copy; 2025 GameTrends. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-consent" id="cookieConsent">
+    <div class="cookie-content">
+      <div class="cookie-header">
+        <div class="cookie-icon">
+          <i class="fas fa-cookie-bite"></i>
+        </div>
+        <h3>Çerez Kullanımı</h3>
+      </div>
+      <p class="cookie-text">Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. Sitemizi
+        kullanmaya devam ederek, <a href="cerez-politikasi.html">Çerez Politikamızı</a> kabul etmiş olursunuz.
+      </p>
+      <div class="cookie-buttons">
+        <button id="cookieAccept" class="btn btn-primary">Kabul Et</button>
+        <button id="cookieReject" class="btn btn-outline">Reddet</button>
+        <button id="cookieSettings" class="btn btn-text">Ayarlar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div class="cookie-settings-modal" id="cookieSettingsModal">
+    <div class="cookie-settings-content">
+      <div class="cookie-settings-header">
+        <h3>Cookie Settings</h3>
+        <button class="cookie-settings-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cookie-settings-body">
+        <p>Manage your cookie preferences. Essential cookies are necessary for the website to function and cannot be
+          disabled.</p>
+
+        <div class="cookie-option">
+          <div class="cookie-option-header">
+            <div class="cookie-checkbox disabled">
+              <input type="checkbox" id="essentialCookies" checked disabled>
+              <label for="essentialCookies">Essential Cookies</label>
+            </div>
+            <div class="cookie-option-title">Essential Cookies</div>
+          </div>
+          <p class="cookie-option-description">These cookies are necessary for the website to function properly and
+            cannot be disabled.</p>
+        </div>
+
+        <div class="cookie-option">
+          <div class="cookie-option-header">
+            <div class="cookie-checkbox">
+              <input type="checkbox" id="analyticsCookies">
+              <label for="analyticsCookies">Analytics Cookies</label>
+            </div>
+            <div class="cookie-option-title">Analytics Cookies</div>
+          </div>
+          <p class="cookie-option-description">These cookies help us understand how visitors interact with our website,
+            helping us improve our services and user experience.</p>
+        </div>
+
+        <div class="cookie-option">
+          <div class="cookie-option-header">
+            <div class="cookie-checkbox">
+              <input type="checkbox" id="marketingCookies">
+              <label for="marketingCookies">Marketing Cookies</label>
+            </div>
+            <div class="cookie-option-title">Marketing Cookies</div>
+          </div>
+          <p class="cookie-option-description">These cookies are used to track visitors across websites to display
+            relevant advertisements based on their interests.</p>
+        </div>
+
+        <div class="cookie-option">
+          <div class="cookie-option-header">
+            <div class="cookie-checkbox">
+              <input type="checkbox" id="preferenceCookies">
+              <label for="preferenceCookies">Preference Cookies</label>
+            </div>
+            <div class="cookie-option-title">Preference Cookies</div>
+          </div>
+          <p class="cookie-option-description">These cookies enable personalized features and remember your preferences
+            across our website.</p>
+        </div>
+      </div>
+      <div class="cookie-settings-footer">
+        <button id="cookieSave" class="btn btn-primary">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
